@@ -1,4 +1,5 @@
 '''
+
 In a competition, four different functions are observed. All the functions use a single for loop and within the for loop, same set of statements are executed.
 
 Consider the following for loops:
@@ -16,6 +17,7 @@ If n is the size of input(positive), which function is the most efficient? In ot
  B
  C
  D
+
 '''
  
 C

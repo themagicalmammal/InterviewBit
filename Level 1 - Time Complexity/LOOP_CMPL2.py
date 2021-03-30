@@ -1,4 +1,5 @@
 '''
+
 What is the time complexity of the following code :
 
     int i, j, k = 0;
@@ -13,6 +14,7 @@ What is the time complexity of the following code :
  Θ(n^2)
  Θ(n^2 / Logn)
  Θ(n^2Logn)
+
 '''
 
 Θ(nLogn)

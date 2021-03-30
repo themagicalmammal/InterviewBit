@@ -1,4 +1,5 @@
 '''
+
 In the following C++ function, let n >= m.
 
     int gcd(int n, int m) {
@@ -16,6 +17,7 @@ What is the time complexity of the above function assuming n > m?
  Ω(n)
  Θ(loglogn)
  Θ(sqrt(n))
+
 '''
 
 Θ(logn)

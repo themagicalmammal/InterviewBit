@@ -1,4 +1,5 @@
 '''
+
 What is time complexity of following code :
 
         int count = 0;
@@ -13,6 +14,7 @@ What is time complexity of following code :
  O(N * log(log(N)))
  O(N)
  O(N * Sqrt(N))
+
 '''
 
 O(N)

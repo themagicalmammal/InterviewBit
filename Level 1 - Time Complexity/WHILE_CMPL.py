@@ -1,4 +1,5 @@
 '''
+
 What is the time complexity of the following code :
 
         int a = 0, i = N;
@@ -12,6 +13,7 @@ What is the time complexity of the following code :
  O(N / 2)
  O(log N)
  O(log(log N))
+
 '''
 
 O(log N)

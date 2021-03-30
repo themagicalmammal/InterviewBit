@@ -1,4 +1,5 @@
 '''
+
 What is the time, space complexity of following code :
 
     int a = 0, b = 0;
@@ -16,6 +17,7 @@ What is the time, space complexity of following code :
  O(N) time, O(N) space
  O(N * N) time, O(N) space
  O(N * N * N) time, O(1) space
+
 '''
 
 O(N * N) time, O(1) space
@@ -23,4 +25,3 @@ O(N * N) time, O(1) space
 The first set of nested loops is O(N^2) and the second loop is O(N).
 
 This is O(max(N^2,N)) which is O(N^2).
-

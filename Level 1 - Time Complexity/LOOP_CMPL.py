@@ -1,4 +1,5 @@
 '''
+
 What is the time, space complexity of following code :
 
         int a = 0, b = 0;    
@@ -15,6 +16,7 @@ Assume that rand() is O(1) time, O(1) space function.
  O(N + M) time, O(1) space
  O(N * M) time, O(N + M) space
  O(N * M) time, O(N * M) space
+
 '''
  
  O(N + M) time, O(1) space

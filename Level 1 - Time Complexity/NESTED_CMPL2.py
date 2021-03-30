@@ -1,4 +1,5 @@
 '''
+
 What is the time complexity of the following code :
 
     int a = 0;
@@ -12,6 +13,7 @@ What is the time complexity of the following code :
  O(N*log(N))
  O(N * Sqrt(N))
  O(N*N)
+
 '''
 
 O(N*N)
