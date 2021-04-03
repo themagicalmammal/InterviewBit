@@ -31,7 +31,7 @@ class Solution:
             else:
                 res+=[dec]
                 dec-=1
-        res.append(dec)
+        res+=[dec]
         return res
 
 '''
