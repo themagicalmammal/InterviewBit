@@ -14,14 +14,12 @@ Output : 1
 
 '''
 
+import random
 class Solution:
     def repeatedNumber(self, nums):
-        import random
-        n = len(nums)
-        if n == 0: return ans
         for i in range(20):
             elem = random.choice(nums)
-            if nums.count(elem) > n // 3: return elem
+            if nums.count(elem) > len(nums) // 3: return elem
         return -1
 
 '''
