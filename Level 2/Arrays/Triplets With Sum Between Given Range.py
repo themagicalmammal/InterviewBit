@@ -26,28 +26,26 @@ Note: You can assume the numbers in strings don’t overflow the primitive data 
 
 class Solution:
     def solve(self, A):
-        n = len(A)
-        a = float(A[0])
-        b = float(A[1])
-        c = float(A[2])
-        for i in range(3 , n):
-            if ((a+b+c) > 1 and (a+b+c) < 2):
+        a, b, c = float(A[0]), float(A[1]), float(A[2])
+        for i in range(3, len(A)):
+            if 2 > a + b + c > 1:
                 return 1
-            elif ((a+b+c) > 2):
-                if (a>b and a>c):
+            elif a + b + c > 2:
+                x = max(a, b, c)
+                if a == x:
                     a = float(A[i])
-                elif (b>a and b>c):
+                elif b == x:
                     b = float(A[i])
-                elif (c>a and c>b):
+                else:
                     c = float(A[i])
             else:
-                if (a<b and a<c):
+                x = min(a, b, c)
+                if x == a:
                     a = float(A[i])
-                elif (b<a and b<c):
+                elif x == b:
                     b = float(A[i])
-                elif (c<a and c<b):
+                else:
                     c = float(A[i])
-        if ((a+b+c) > 1 and (a+b+c) < 2) :
+        if 2 > a + b + c > 1:
             return 1
-        else:
-            return 0
+        return 0
