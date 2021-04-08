@@ -11,11 +11,10 @@ Output : True
 
 '''
 
-from math import sqrt
 class Solution:
     def isPrime(self, p):
-        if p < 2: return 0
-        for i in range(2,int(sqrt(p))+1):
+        if p == 1 or p%2 == 0: return 0
+        for i in range(3,int(p**0.5)+1,2):
             if p % i == 0:
                 return 0
         return 1
