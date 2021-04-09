@@ -8,12 +8,8 @@ Please correct the bug and then submit the code.
 
 class Solution:
     def isPrime(self, A):
-        if A ==1:
-           return 0
-        elif A < 3:
-           return 1
-        upperLimit = int(A**0.5)
-        for i in xrange(2, upperLimit + 1):
-            if i < A and A % i == 0:
+        if A ==1: return 0
+        for i in xrange(2, int(A**0.5) + 1):
+            if A % i == 0:
                 return 0
         return 1
