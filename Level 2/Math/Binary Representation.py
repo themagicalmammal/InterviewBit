@@ -23,7 +23,7 @@ class Solution:
 '''
 
 class Solution:
-    def findDigitsInBinary(self, A: int) -> str:
+    def findDigitsInBinary(self, A):
         if A == 0:
             return '0'
         result = ''

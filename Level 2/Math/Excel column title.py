@@ -65,3 +65,18 @@ class Solution:
                 s+=chr(A%26+64)
             A=(A-1)//26
         return s[::-1]
+
+'''
+
+class Solution:
+    def convertToTitle(self, A):
+        mydict = 'ZABCDEFGHIJKLMNOPQRSTUVWXY'
+        s = ''
+        while A > 0:
+            a = A%26
+            s = mydict[a]+s
+            A//=26
+            if a == 0: A -= 1
+        return s
+
+'''
