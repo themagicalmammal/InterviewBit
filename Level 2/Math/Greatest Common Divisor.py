@@ -1,4 +1,4 @@
-'''
+"""
 
 Given 2 non negative integers m and n, find gcd(m, n)
 
@@ -12,15 +12,17 @@ n : 9
 
 GCD(m, n) : 3 
 
-'''
+"""
+
 
 class Solution:
     def gcd(self, A, B):
-        if B==0:
+        if B == 0:
             return A
-        return self.gcd(B,A%B)
+        return self.gcd(B, A % B)
 
-'''
+
+"""
 
 class Solution:
     def gcd(self, A, B):
@@ -29,4 +31,4 @@ class Solution:
         return A
 
 #Swap A, B if B > A
-'''
+"""
