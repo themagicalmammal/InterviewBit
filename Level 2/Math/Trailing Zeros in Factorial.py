@@ -56,3 +56,15 @@ class Solution:
             if A//5 ==0:    
                 return 0
             return (A//5)+self.trailingZeroes(A//5)
+
+'''
+
+class Solution:
+    def trailingZeroes(self, A):
+        c, i = 0, 5
+        while A//i > 0:
+            c += A // i
+            i *= 5
+        return c
+
+'''
