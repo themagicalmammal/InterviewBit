@@ -51,20 +51,22 @@ Explanation 2:
 ...
 26 -> Z
 27 -> AA
-28 -> AB 
+28 -> AB
 
 '''
 
+
 class Solution:
     def convertToTitle(self, A):
-        s=""
-        while A>0:
-            if A%26==0:
-                s+=chr(26+64)
+        s = ""
+        while A > 0:
+            if A % 26 == 0:
+                s += chr(26 + 64)
             else:
-                s+=chr(A%26+64)
-            A=(A-1)//26
+                s += chr(A % 26 + 64)
+            A = (A - 1) // 26
         return s[::-1]
+
 
 '''
 

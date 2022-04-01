@@ -53,30 +53,32 @@ Explanation 2:
 
 '''
 
+
 class Solution:
     def hammingDistance(self, A):
-        array=[]
-        total=0
+        array = []
+        total = 0
         for i in A:
             array.append('{0:032b}'.format(i))
-        array=list(zip(*array))
+        array = list(zip(*array))
         for i in array:
-            a=i.count("0")
-            total+=2*a*(len(i)-a)
-        return total%1000000007
+            a = i.count("0")
+            total += 2 * a * (len(i) - a)
+        return total % 1000000007
+
 
 '''
 
 class Solution:
     def hammingDistance(self, A):
-        ans = 0 
-        for i in range(32): 
+        ans = 0
+        for i in range(32):
             count = 0
-            for j in A: 
-                if j & (1 << i): 
+            for j in A:
+                if j & (1 << i):
                     count += 1
-            ans += (count * (len(A) - count) * 2); 
+            ans += (count * (len(A) - count) * 2);
             ans %= 1000000007
-        return ans 
+        return ans
 
 '''

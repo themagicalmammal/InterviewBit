@@ -51,11 +51,13 @@ Explanation 2:
 
 '''
 
+
 class Solution:
     def trailingZeroes(self, A):
-            if A//5 ==0:    
-                return 0
-            return (A//5)+self.trailingZeroes(A//5)
+        if A // 5 == 0:
+            return 0
+        return (A // 5) + self.trailingZeroes(A // 5)
+
 
 '''
 

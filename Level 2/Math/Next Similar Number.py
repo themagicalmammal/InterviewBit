@@ -61,19 +61,21 @@ Explanation 1:
 Explanation 2:
 
  The given number is the largest possible number with given set of digits so we will return -1.
- 
+
 '''
+
 
 class Solution:
     def solve(self, s):
         for i in range(len(s) - 2, -1, -1):
             tail = sorted(s[i:])
             for j in range(len(tail)):
-                m = int(s[:i] + tail[j] + ''.join(tail[:j] + tail[j+1:]))
+                m = int(s[:i] + tail[j] + ''.join(tail[:j] + tail[j + 1:]))
                 if m > int(s):
                     return m
         return '-1'
-        
+
+
 '''
 
 class Solution:
@@ -89,5 +91,5 @@ class Solution:
                 return(A)
             idx-=1
         return('-1')
-        
+
 '''

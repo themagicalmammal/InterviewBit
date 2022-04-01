@@ -15,15 +15,18 @@ Example :
 Input : A = 2, B = 2
 Output : 2
 
-2 possible routes : (0, 0) -> (0, 1) -> (1, 1) 
+2 possible routes : (0, 0) -> (0, 1) -> (1, 1)
               OR  : (0, 0) -> (1, 0) -> (1, 1)
 
 '''
 
 from math import factorial as f
+
+
 class Solution:
     def uniquePaths(self, A, B):
-        return f(A+B-2)//f(A-1)//f(B-1)
+        return f(A + B - 2) // f(A - 1) // f(B - 1)
+
 
 '''
 

@@ -61,9 +61,10 @@ Explanation 2:
  The answer is [100] as its sum is larger than the other two.
 
 
- NOTE: You only need to implement the given function. Do not read input, instead use the arguments to the function. Do not print the output, instead return values as specified. Still have a doubt? Checkout Sample Codes for more details. 
+ NOTE: You only need to implement the given function. Do not read input, instead use the arguments to the function. Do not print the output, instead return values as specified. Still have a doubt? Checkout Sample Codes for more details.
 
 '''
+
 
 class Solution:
     def maxset(self, A):
@@ -86,7 +87,7 @@ class Solution:
                 r = 0
                 x = i + 1
         if A[e] > -1:
-            return A[e:f+1]
+            return A[e:f + 1]
         return []
 
 

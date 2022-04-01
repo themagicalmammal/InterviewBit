@@ -34,6 +34,7 @@ Output 2:
 
 '''
 
+
 class Solution:
     def generateMatrix(self, A):
         B = [[0] * A for _ in range(A)]
@@ -58,7 +59,7 @@ class Solution:
                     j += 1
                 C -= 1
             elif d == 3:
-                for i in range(C, T-1, -1):
+                for i in range(C, T - 1, -1):
                     B[i][L] = j
                     j += 1
                 L += 1

@@ -53,6 +53,7 @@ Explanation 2:
 
 '''
 
+
 class Solution:
     def solve(self, A, B):
-        return (A+B)% 10**7
+        return (A + B) % 10**7

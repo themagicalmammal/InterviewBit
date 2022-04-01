@@ -14,10 +14,12 @@ If there is no duplicate, output -1
 
 '''
 
+
 class Solution:
     def repeatedNumber(self, A):
         n = len(A)
-        return sum(A) - n*(n-1)//2
+        return sum(A) - n * (n - 1) // 2
+
 
 '''
 

@@ -28,6 +28,7 @@ No operation can give us more than three 1s in final string. So, we return empty
 
 '''
 
+
 class Solution:
     def flip(self, A):
         r = c = k = m = n = 0
@@ -37,12 +38,13 @@ class Solution:
             if r < 0:
                 r = 0
                 k = i
-            r =  r + 1 if A[i] == "0" else r - 1
+            r = r + 1 if A[i] == "0" else r - 1
             if r > c:
                 c = r
                 m = k + 1
                 n = i + 1
-        return [m,n]
+        return [m, n]
+
 
 '''
 
@@ -53,10 +55,10 @@ class Solution:
         ones = 0
         start = 0
         ans = None
-        
+
         for i, a in enumerate(A):
             diff += (1 if a is '0' else -1)
-            
+
             if diff < 0:
                 diff = 0
                 start = i + 1
@@ -65,7 +67,7 @@ class Solution:
             if diff > max_diff:
                 max_diff = diff
                 ans = [start, i]
-        
+
         if ans is None:
             return []
         return map(lambda x: x+1, ans)

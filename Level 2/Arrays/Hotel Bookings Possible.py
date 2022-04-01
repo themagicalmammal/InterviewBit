@@ -40,14 +40,16 @@ Explanation 1:
 
  '''
 
+
 class Solution:
     def hotel(self, A, B, C):
         A.sort()
         B.sort()
-        for i in range(len(A)-C):
-            if A[i+C] < B[i]:
+        for i in range(len(A) - C):
+            if A[i + C] < B[i]:
                 return False
         return True
+
 
 '''
 
@@ -64,5 +66,5 @@ class Solution:
             else:
                 j -= 1
         return 1
-        
+
 '''

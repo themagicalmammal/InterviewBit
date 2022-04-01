@@ -44,15 +44,17 @@ Explanation 2:
 
 '''
 
+
 class Solution:
     def solve(self, A):
         A.sort(reverse=True)
         if A[0] == 0:
             return 1
         for i in range(len(A)):
-            if A[i-1] != A[i] and A[i] == i:
+            if A[i - 1] != A[i] and A[i] == i:
                 return 1
         return -1
+
 
 '''
 
@@ -79,5 +81,5 @@ class Solution:
         else:
           return 1
       return -1
-    
+
 '''

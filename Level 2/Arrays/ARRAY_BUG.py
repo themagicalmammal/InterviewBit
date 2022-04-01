@@ -17,6 +17,7 @@ However, there is a small bug in the problem. Fix the bug and submit the problem
 
 '''
 
+
 class Solution:
     def rotateArray(self, a, b):
         l = len(a)

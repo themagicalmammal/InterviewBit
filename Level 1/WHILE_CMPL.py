@@ -18,6 +18,6 @@ What is the time complexity of the following code :
 
 O(log N)
 
-We have to find the smallest x such that `N / 2^x < 1 OR 2^x > N`
+We have to find the smallest x such that `N / 2 ^ x < 1 OR 2 ^ x > N`
 
-x = log(N) 
+x = log(N)

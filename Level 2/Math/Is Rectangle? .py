@@ -64,7 +64,7 @@ Example Explanation
 
 Explanation 1:
 
- 
+
  The rectangle drawn above is one of the rectangles that can be formed by side length of 1, 1, 2, 2 so we will return 1.
 
 Explanation 2:
@@ -74,13 +74,16 @@ Explanation 2:
 '''
 
 from math import sqrt
+
+
 class Solution:
     def solve(self, A, B, C, D):
-        z=A*B*C*D
+        z = A * B * C * D
         if int(sqrt(z)) == sqrt(z):
             return 1
         return 0
-        
+
+
 '''
 
 class Solution:
@@ -91,14 +94,14 @@ class Solution:
             return 1
         else:
             return 0
-            
+
  OR
- 
+
  class Solution:
     def solve(self, A, B, C, D):
         z=[A,B,C,D]
         if sum(z)==2*sum(set(z)):
             return 1
         return 0
-        
+
 '''

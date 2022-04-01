@@ -49,12 +49,14 @@ Explanation 2:
 
 '''
 
+
 class Solution:
     def solve(self, A):
         s = 1
-        for i in range(2,A+1):
+        for i in range(2, A + 1):
             s *= i
         return s
+
 
 '''
 

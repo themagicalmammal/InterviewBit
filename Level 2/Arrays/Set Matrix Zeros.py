@@ -20,7 +20,7 @@ Examples:
 
 Input 1:
     [   [1, 0, 1],
-        [1, 1, 1], 
+        [1, 1, 1],
         [1, 1, 1]   ]
 
 Output 1:
@@ -47,7 +47,7 @@ class Solution:
         cols = set()
         for i in range(len(A)):
             for j in range(len(A[0])):
-                if A[i][j]==0:
+                if A[i][j] == 0:
                     rows.add(i)
                     cols.add(j)
         for i in rows:
@@ -58,6 +58,7 @@ class Solution:
                 A[i][j] = 0
         return A
 
+
 '''
 
 class Solution:
@@ -66,7 +67,7 @@ class Solution:
         M = len(A[0])
         del_first_row = False
         del_first_col = False
-        
+
         for i in xrange(N):
             if A[i][0] == 0:
                 del_first_row = True
@@ -75,13 +76,13 @@ class Solution:
             if A[0][i] == 0:
                 del_first_col = True
                 break
-                
+
         for i in xrange(N):
             for j in xrange(M):
                 if A[i][j] == 0:
                     A[i][0] = 2
                     A[0][j] = 2
-                    
+
 
         for i in xrange(1,N):
             for j in xrange(1,M):
@@ -92,10 +93,10 @@ class Solution:
         for i in xrange(N):
             if A[i][0] > 1 or del_first_row:
                 A[i][0] = 0
-        for i in xrange(M): 
+        for i in xrange(M):
             if A[0][i] > 1 or del_first_col:
                 A[0][i] = 0
-                
+
         return A
 
 '''

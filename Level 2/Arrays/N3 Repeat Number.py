@@ -9,18 +9,22 @@ If there are multiple solutions, return any one.
 Example :
 
 Input : [1 2 3 1 1]
-Output : 1 
-1 occurs 3 times which is more than 5/3 times. 
+Output : 1
+1 occurs 3 times which is more than 5/3 times.
 
 '''
 
 import random
+
+
 class Solution:
     def repeatedNumber(self, nums):
         for i in range(20):
             elem = random.choice(nums)
-            if nums.count(elem) > len(nums) // 3: return elem
+            if nums.count(elem) > len(nums) // 3:
+                return elem
         return -1
+
 
 '''
 
@@ -49,7 +53,7 @@ def appearsNBy3(arr, n):
     for i in range(0, n):
         if (arr[i] == first):
             count1 += 1
- 
+
         elif (arr[i] == second):
             count2 += 1
     if (count1 > n / 3):
