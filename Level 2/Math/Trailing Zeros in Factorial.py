@@ -53,6 +53,7 @@ Explanation 2:
 
 
 class Solution:
+
     def trailingZeroes(self, A):
         if A // 5 == 0:
             return 0

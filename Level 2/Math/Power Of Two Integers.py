@@ -12,6 +12,7 @@ as 2^2 = 4.
 
 
 class Solution:
+
     def isPower(self, A):
         for p in range(2, 33):
             a = round(A**(1 / p))
