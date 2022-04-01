@@ -20,18 +20,19 @@ Return
 
 '''
 
+
 class Solution:
     def solve(self, A):
-        B = [[1], [1,1], [1,2,1]]
+        B = [[1], [1, 1], [1, 2, 1]]
         l = len(B)
         if A > l:
-            for i in range(l+1, A+1):
+            for i in range(l + 1, A + 1):
                 z = []
                 for j in range(i):
                     if j == 0 or j == i - 1:
                         z.append(1)
                     else:
-                        z.append(B[-1][j] + B[-1][j-1])
+                        z.append(B[-1][j] + B[-1][j - 1])
                 B.append(z)
         return B[:A]
 
@@ -51,7 +52,7 @@ class Solution:
             result.append(row)
         return result
 
-OR 
+OR
 
 class Solution:
     def solve(self, A):

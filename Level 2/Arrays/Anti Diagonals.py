@@ -4,8 +4,8 @@ Give a N*N square matrix, return an array of its anti-diagonals. Look at the exa
 
 Example:
 
-		
-Input: 	
+
+Input:
 
 1 2 3
 4 5 6
@@ -13,7 +13,7 @@ Input:
 
 Return the following :
 
-[ 
+[
   [1],
   [2, 4],
   [3, 5, 7],
@@ -22,11 +22,11 @@ Return the following :
 ]
 
 
-Input : 
+Input :
 1 2
 3 4
 
-Return the following  : 
+Return the following  :
 
 [
   [1],
@@ -36,11 +36,12 @@ Return the following  :
 
 '''
 
+
 class Solution:
     def diagonal(self, A):
         a = len(A)
-        B = [[] for i in range(a*2 - 1)]
+        B = [[] for i in range(a * 2 - 1)]
         for i in range(a):
             for j in range(a):
-                B[i+j].append(A[i][j])
+                B[i + j].append(A[i][j])
         return B

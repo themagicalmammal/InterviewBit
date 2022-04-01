@@ -14,6 +14,7 @@ Return: [1 2 Fizz 4 Buzz]
 
 '''
 
+
 class Solution:
     def fizzBuzz(self, A):
         a = [i + 1 for i in range(A)]

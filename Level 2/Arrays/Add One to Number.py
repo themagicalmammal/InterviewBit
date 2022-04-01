@@ -23,20 +23,22 @@ A : For the purpose of this question, NO. Even if the input has zeroes before th
 
 '''
 
+
 class Solution:
     def plusOne(self, A):
-        for i in range(len(A)-1,-1,-1):
+        for i in range(len(A) - 1, -1, -1):
             A[i] += 1
             if A[i] > 9:
                 z = str(A[i])
                 A[i] = int(z[-1])
                 if i == 0:
-                    A.insert(0,1)
+                    A.insert(0, 1)
             else:
                 break
         while A[0] == 0:
             A.pop(0)
         return A
+
 
 '''
 

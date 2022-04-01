@@ -51,13 +51,16 @@ C -> 3
 ...
 Z -> 26
 AA -> 27
-AB -> 28 
+AB -> 28
 
 '''
 
+
 class Solution:
     def titleToNumber(self, A):
-        return sum((ord(A[len(A) - i - 1]) - 64) * (26**i) for i in range(len(A)))
+        return sum((ord(A[len(A) - i - 1]) - 64) * (26**i)
+                   for i in range(len(A)))
+
 
 '''
 

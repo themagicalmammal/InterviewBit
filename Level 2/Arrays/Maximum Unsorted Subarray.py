@@ -21,13 +21,15 @@ In the above example(Input 1), if we sort the subarray A1, A2, then whole array 
 
 '''
 
+
 class Solution:
     def subUnsort(self, A):
-        b=sorted(A)
-        L = [i for i in range(len(A)) if A[i]!=b[i]]
+        b = sorted(A)
+        L = [i for i in range(len(A)) if A[i] != b[i]]
         if L:
-            return [min(L),max(L)]
+            return [min(L), max(L)]
         return [-1]
+
 
 '''
 
@@ -46,5 +48,5 @@ class Solution:
         if start==-1:
             return [-1]
         return [start, end]
-        
+
 '''

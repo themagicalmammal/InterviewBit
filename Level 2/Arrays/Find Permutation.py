@@ -20,19 +20,21 @@ Return: [1, 3, 2]
 
 '''
 
+
 class Solution:
     def findPerm(self, s, n):
-        res=[]
+        res = []
         inc, dec = 1, n
         for i in s:
-            if i=='I':
-                res+=[inc]
-                inc+=1
+            if i == 'I':
+                res += [inc]
+                inc += 1
             else:
-                res+=[dec]
-                dec-=1
-        res+=[dec]
+                res += [dec]
+                dec -= 1
+        res += [dec]
         return res
+
 
 '''
 
@@ -42,7 +44,7 @@ class Solution:
     # @return a list of integers
     def findPerm(self, A, B):
         if B==0:return[]
-        
+
         elif B==1: return [1]
         m=A.count('D')
         res =list()

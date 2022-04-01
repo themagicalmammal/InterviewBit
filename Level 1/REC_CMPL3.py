@@ -13,12 +13,12 @@ int findMinPath(vector<vector<int> >& V, int r, int c) {
   return memo[r][c];
 }
 
-Callsite : 
+Callsite :
 memset(memo, -1, sizeof(memo));
 findMinPath(V, 0, 0);
 Assume R = V.size() and C = V[0].size() and V has positive elements
 
- NOTE : This question involves recursion which will be explained later in topic Backtracking. So, if you are not able to approach this question now, you can give it a try later. 
+ NOTE : This question involves recursion which will be explained later in topic Backtracking. So, if you are not able to approach this question now, you can give it a try later.
 
  O(2^(R + C))
  O(R*C)
@@ -28,22 +28,22 @@ Assume R = V.size() and C = V[0].size() and V has positive elements
 
 '''
 
-O(R*C)
+O(R * C)
 
 Note that for a given `(r, c)`
- 
-the following code will not be executed more than once : 
 
-memo[r][c] = V[r][c] + min(findMinPath(V, r + 1, c), findMinPath(V, r, c + 1));
+the following code will not be executed more than once:
 
-
-Once memo[r][c] is set, the functions will return at 
-
-if (memo[r][c] != -1) return memo[r][c];
+memo[r][c] = V[r][c] + min(findMinPath(V, r + 1, c), findMinPath(V, r, c + 1))
 
 
-So, every function ends up calling other functions at most 1 time. 
-In other words, every function ends up executing atmost O(1) times (Note that you can shift the part about checking for memo[r][c] != -1 at the callsite ).
+Once memo[r][c] is set, the functions will return at
+
+if (memo[r][c] != -1) return memo[r][c]
+
+
+So, every function ends up calling other functions at most 1 time.
+In other words, every function ends up executing atmost O(1) times(Note that you can shift the part about checking for memo[r][c] != -1 at the callsite).
 
 `O(R * C)` possible number of combinations are possible for `(r, c)`
-Hence, the time complexity of the function : O(R*C)
+Hence, the time complexity of the function: O(R * C)

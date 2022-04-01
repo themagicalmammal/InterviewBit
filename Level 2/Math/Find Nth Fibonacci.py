@@ -64,25 +64,29 @@ Explanation 2:
 
 '''
 
+
 class Solution:
-    def fibi(self,n,d={}):
-        if n==0:
+    def fibi(self, n, d={}):
+        if n == 0:
             return 0
-        elif n in [1,2]:
+        elif n in [1, 2]:
             return 1
-        elif n==4:
+        elif n == 4:
             return 3
         if n in d:
             return d[n]
-        elif n%2!=0:
-            d[n]=(self.fibi(n//2)**2 + self.fibi(n//2+1)**2)%(10**9+7)
+        elif n % 2 != 0:
+            d[n] = (self.fibi(n // 2)**2 +
+                    self.fibi(n // 2 + 1)**2) % (10**9 + 7)
             return d[n]
         else:
-            d[n]=(2*self.fibi(n//2)**2 + self.fibi(n//2-3)*self.fibi(n//2))%(10**9+7)
+            d[n] = (2 * self.fibi(n // 2)**2 + self.fibi(n // 2 - 3)
+                    * self.fibi(n // 2)) % (10**9 + 7)
             return d[n]
+
     def solve(self, a):
         return self.fibi(a)
-        
+
  '''
  
 from numpy import matrix, array

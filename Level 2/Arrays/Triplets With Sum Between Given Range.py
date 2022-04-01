@@ -24,6 +24,7 @@ Note: You can assume the numbers in strings don’t overflow the primitive data 
 
 '''
 
+
 class Solution:
     def solve(self, A):
         a, b, c = float(A[0]), float(A[1]), float(A[2])

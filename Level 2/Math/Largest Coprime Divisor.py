@@ -15,8 +15,10 @@ X = 5
 '''
 
 from math import gcd
+
+
 class Solution:
     def cpFact(self, A, B):
-        while gcd(A,B)!=1:
-            A//=gcd(A,B)
+        while gcd(A, B) != 1:
+            A //= gcd(A, B)
         return A

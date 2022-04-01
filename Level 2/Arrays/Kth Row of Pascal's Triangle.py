@@ -9,25 +9,27 @@ Example:
 Input : k = 3
 
 Return : [1,3,3,1]
- NOTE : k is 0 based. k = 0, corresponds to the row [1]. 
+ NOTE : k is 0 based. k = 0, corresponds to the row [1].
 Note:Could you optimize your algorithm to use only O(k) extra space?
 
 '''
 
+
 class Solution:
     def getRow(self, A):
-        B = [[1], [1,1], [1,2,1]]
+        B = [[1], [1, 1], [1, 2, 1]]
         l = len(B)
         if A + 1 > l:
-            for i in range(l+1, A+2):
+            for i in range(l + 1, A + 2):
                 z = []
                 for j in range(i):
                     if j == 0 or j == i - 1:
                         z.append(1)
                     else:
-                        z.append(B[-1][j] + B[-1][j-1])
+                        z.append(B[-1][j] + B[-1][j - 1])
                 B.append(z)
         return B[A]
+
 
 '''
 

@@ -16,6 +16,7 @@ So, we return 5.
 
 '''
 
+
 class Solution:
     def maxArr(self, a):
         n = len(a)

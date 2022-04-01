@@ -34,10 +34,11 @@ Explanation 2:
 
 '''
 
+
 class Solution:
     def maxSubArray(self, A):
         r = c = A[0]
         for a in A[1:]:
-            r = max(r+a, a)
-            c = max(r,c)
+            r = max(r + a, a)
+            c = max(r, c)
         return c

@@ -4,19 +4,21 @@ Given a number N, find all factors of N.
 
 Example:
 
-N = 6 
+N = 6
 factors = {1, 2, 3, 6}
 Make sure the returned array is sorted.
 
 '''
 
+
 class Solution:
     def allFactors(self, A):
         z = []
-        for i in range(1, int(A**0.5)+1):
-            if A%i == 0:
-                z.extend([i,A//i])
+        for i in range(1, int(A**0.5) + 1):
+            if A % i == 0:
+                z.extend([i, A // i])
         return sorted(set(z))
+
 
 '''
 

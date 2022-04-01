@@ -11,7 +11,7 @@ int findMinPath(vector<vector<int> > &V, int r, int c) {
 }
 Assume R = V.size() and C = V[0].size().
 
- NOTE : This question involves recursion which will be explained later in topic Backtracking. So, if you are not able to approach this question now, you can give it a try later. 
+ NOTE : This question involves recursion which will be explained later in topic Backtracking. So, if you are not able to approach this question now, you can give it a try later.
 
  O(2^(R + C))
  O(R*C)
@@ -21,13 +21,13 @@ Assume R = V.size() and C = V[0].size().
 
 '''
 
-O(2^(R + C))
+O(2 ^ (R + C))
 
 Note that in every function call, we end up making 2 calls.
 
-So, the function calls ends up looking like a tree :
+So, the function calls ends up looking like a tree:
 
-                   F(0,0)
+                   F(0, 0)
                 /          \ 
             F(0, 1)         F(1, 0)
              /    \         /       \ 

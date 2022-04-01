@@ -10,7 +10,7 @@ Example
 m : 6
 n : 9
 
-GCD(m, n) : 3 
+GCD(m, n) : 3
 
 """
 

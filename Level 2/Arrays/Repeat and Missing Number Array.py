@@ -22,20 +22,22 @@ Note that in your output A should precede B.
 
 Example:
 
-Input:[3 1 2 5 3] 
+Input:[3 1 2 5 3]
 
-Output:[3, 4] 
+Output:[3, 4]
 
 A = 3, B = 4
 
 '''
 
+
 class Solution:
     def repeatedNumber(self, A):
-        n=len(A)
-        n=n*(n+1)//2
-        temp=sum(set(A))
-        return [sum(A) - temp ,n - temp]
+        n = len(A)
+        n = n * (n + 1) // 2
+        temp = sum(set(A))
+        return [sum(A) - temp, n - temp]
+
 
 '''
 
@@ -43,15 +45,15 @@ class Solution:
     def repeatedNumber(self, A):
         n = len(A)
         S = sum(A)
-        Sn = (n*(n+1))//2        
+        Sn = (n*(n+1))//2
         S2 = 0
         for num in A:
-            S2 += num*num  
+            S2 += num*num
         S2n =(n*(n+1)*(2*n+1))//6
         diff = S - Sn
         summation = (S2 - S2n)//diff
         D = (summation - diff)//2
         R = summation - D
         return [R,D]
-        
+
 '''
