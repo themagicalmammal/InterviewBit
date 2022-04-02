@@ -56,7 +56,7 @@ Example Explanation
 
 Explanation 1:
 
- The smallest number greater then 218765 with same set of digits is 251678.
+ The smallest number greater than 218765 with same set of digits is 251678.
 
 Explanation 2:
 
