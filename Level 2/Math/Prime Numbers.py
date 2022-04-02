@@ -1,6 +1,6 @@
 '''
 
-Given a number N, find all prime numbers upto N ( N included ).
+Given a number N, find all prime numbers up to N ( N included ).
 
 Example:
 
