@@ -4,7 +4,7 @@ Given a read only array of n + 1 integers between 1 and n, find one number that 
 
 Sample Input:
 
-[3 4 1 4 1]
+\[3 4 1 4 1\]
 Sample Output:
 
 1
@@ -14,22 +14,20 @@ If there is no duplicate, output -1
 
 '''
 
-
 class Solution:
-    def repeatedNumber(self, A):
-        n = len(A)
-        return sum(A) - n * (n - 1) // 2
-
+def repeatedNumber(self, A):
+n = len(A)
+return sum(A) - n * (n - 1) // 2
 
 '''
 
 class Solution:
-    def repeatedNumber(self, A):
-        temp = [False]*(len(A)+1)
-        for i in A:
-            if temp[i]:
-                return i
-            temp[i] = True
-        return -1
+def repeatedNumber(self, A):
+temp = \[False\]\*(len(A)+1)
+for i in A:
+if temp\[i\]:
+return i
+temp\[i\] = True
+return -1
 
 '''

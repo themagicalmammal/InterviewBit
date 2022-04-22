@@ -10,18 +10,17 @@ Look at the example for more details.
 Example
 
 A = 5
-Return: [1 2 Fizz 4 Buzz]
+Return: \[1 2 Fizz 4 Buzz\]
 
 '''
 
-
 class Solution:
-    def fizzBuzz(self, A):
-        a = [i + 1 for i in range(A)]
-        for i in range(2, A, 3):
-            a[i] = 'Fizz'
-        for i in range(4, A, 5):
-            a[i] = 'Buzz'
-        for i in range(14, A, 15):
-            a[i] = 'FizzBuzz'
-        return a
+def fizzBuzz(self, A):
+a = \[i + 1 for i in range(A)\]
+for i in range(2, A, 3):
+a\[i\] = 'Fizz'
+for i in range(4, A, 5):
+a\[i\] = 'Buzz'
+for i in range(14, A, 15):
+a\[i\] = 'FizzBuzz'
+return a
