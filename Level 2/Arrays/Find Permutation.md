@@ -16,47 +16,47 @@ n = 3
 
 s = ID
 
-Return: [1, 3, 2]
-
-'''
-
-
-class Solution:
-    def findPerm(self, s, n):
-        res = []
-        inc, dec = 1, n
-        for i in s:
-            if i == 'I':
-                res += [inc]
-                inc += 1
-            else:
-                res += [dec]
-                dec -= 1
-        res += [dec]
-        return res
-
+Return: \[1, 3, 2\]
 
 '''
 
 class Solution:
-    # @param A : string
-    # @param B : integer
-    # @return a list of integers
-    def findPerm(self, A, B):
-        if B==0:return[]
+def findPerm(self, s, n):
+res = \[\]
+inc, dec = 1, n
+for i in s:
+if i == 'I':
+res += \[inc\]
+inc += 1
+else:
+res += \[dec\]
+dec -= 1
+res += \[dec\]
+return res
 
-        elif B==1: return [1]
-        m=A.count('D')
-        res =list()
-        count=m
-        ctr=m+1
-        res.append(ctr)
-        ctr+=1
-        for i in range(B-1):
-            if A[i]=='D':
-                res.append(count)
-                count-=1
-            else :
-                res.append(ctr)
+'''
+
+class Solution:
+\# @param A : string
+\# @param B : integer
+\# @return a list of integers
+def findPerm(self, A, B):
+if B==0:return\[\]
+
+```
+    elif B==1: return [1]
+    m=A.count('D')
+    res =list()
+    count=m
+    ctr=m+1
+    res.append(ctr)
+    ctr+=1
+    for i in range(B-1):
+        if A[i]=='D':
+            res.append(count)
+            count-=1
+        else :
+            res.append(ctr)
+```
 
 '''

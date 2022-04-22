@@ -14,21 +14,19 @@ GCD(m, n) : 3
 
 """
 
-
 class Solution:
-    def gcd(self, A, B):
-        if B == 0:
-            return A
-        return self.gcd(B, A % B)
-
+def gcd(self, A, B):
+if B == 0:
+return A
+return self.gcd(B, A % B)
 
 """
 
 class Solution:
-    def gcd(self, A, B):
-        while B!=0:
-            A, B= B, A%B
-        return A
+def gcd(self, A, B):
+while B!=0:
+A, B= B, A%B
+return A
 
 #Swap A, B if B > A
 """

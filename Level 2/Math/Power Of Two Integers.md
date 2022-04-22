@@ -10,28 +10,28 @@ as 2^2 = 4.
 
 '''
 
-
 class Solution:
 
-    def isPower(self, A):
-        for p in range(2, 33):
-            a = round(A**(1 / p))
-            if a**p == A:
-                return 1
-        return 0
-
+```
+def isPower(self, A):
+    for p in range(2, 33):
+        a = round(A**(1 / p))
+        if a**p == A:
+            return 1
+    return 0
+```
 
 '''
 
 class Solution:
-    def isPower(self, a):
-        if a==1: return a
-        for i in range(2,a):
-            j=2
-            while i**j<a:
-                j=j+1
-            if i**j==a:
-                return 1
-        return 0
+def isPower(self, a):
+if a==1: return a
+for i in range(2,a):
+j=2
+while i**j\<a:
+j=j+1
+if i**j==a:
+return 1
+return 0
 
 '''

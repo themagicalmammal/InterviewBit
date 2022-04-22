@@ -6,70 +6,70 @@ Your aim is to perform ATMOST one operation such that in final string number of 
 
 Notes:
 
-Pair (a, b) is lexicographically smaller than pair (c, d) if a < c or, if a == c and b < d.
+Pair (a, b) is lexicographically smaller than pair (c, d) if a \< c or, if a == c and b \< d.
 For example,
 
 S = 010
 
-Pair of [L, R] | Final string
-_______________|_____________
-[1 1]          | 110
-[1 2]          | 100
-[1 3]          | 101
-[2 2]          | 000
-[2 3]          | 001
+Pair of \[L, R\] | Final string
+\_\______________|_____________
+\[1 1\]          | 110
+\[1 2\]          | 100
+\[1 3\]          | 101
+\[2 2\]          | 000
+\[2 3\]          | 001
 
-We see that two pairs [1, 1] and [1, 3] give same number of 1s in final string. So, we return [1, 1].
+We see that two pairs \[1, 1\] and \[1, 3\] give same number of 1s in final string. So, we return \[1, 1\].
 Another example,
 
 If S = 111
 
-No operation can give us more than three 1s in final string. So, we return empty array [].
-
-'''
-
-
-class Solution:
-    def flip(self, A):
-        r = c = k = m = n = 0
-        for i in range(len(A)):
-            if i == len(A) - 1 and A[-1] == "1" and m == n == 0:
-                return []
-            if r < 0:
-                r = 0
-                k = i
-            r = r + 1 if A[i] == "0" else r - 1
-            if r > c:
-                c = r
-                m = k + 1
-                n = i + 1
-        return [m, n]
-
+No operation can give us more than three 1s in final string. So, we return empty array \[\].
 
 '''
 
 class Solution:
-    def flip(self, A):
-        max_diff = 0
-        diff = 0
-        ones = 0
-        start = 0
-        ans = None
+def flip(self, A):
+r = c = k = m = n = 0
+for i in range(len(A)):
+if i == len(A) - 1 and A\[-1\] == "1" and m == n == 0:
+return \[\]
+if r \< 0:
+r = 0
+k = i
+r = r + 1 if A\[i\] == "0" else r - 1
+if r > c:
+c = r
+m = k + 1
+n = i + 1
+return \[m, n\]
 
-        for i, a in enumerate(A):
-            diff += (1 if a is '0' else -1)
+'''
 
-            if diff < 0:
-                diff = 0
-                start = i + 1
-                continue
+class Solution:
+def flip(self, A):
+max_diff = 0
+diff = 0
+ones = 0
+start = 0
+ans = None
 
-            if diff > max_diff:
-                max_diff = diff
-                ans = [start, i]
+```
+    for i, a in enumerate(A):
+        diff += (1 if a is '0' else -1)
 
-        if ans is None:
-            return []
-        return map(lambda x: x+1, ans)
+        if diff < 0:
+            diff = 0
+            start = i + 1
+            continue
+
+        if diff > max_diff:
+            max_diff = diff
+            ans = [start, i]
+
+    if ans is None:
+        return []
+    return map(lambda x: x+1, ans)
+```
 
 '''
