@@ -10,10 +10,10 @@ f3(n) = nLogn
 
 f4(n) = n^(Logn)
 
- f3, f2, f4, f1
- f3, f2, f1, f4
- f2, f3, f1, f4
- f2, f3, f4, f1
+f3, f2, f4, f1
+f3, f2, f1, f4
+f2, f3, f1, f4
+f2, f3, f4, f1
 
 '''
 
