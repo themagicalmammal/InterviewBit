@@ -2,4 +2,4 @@ name: Lint
 on: push
 jobs:
   lint:
-    uses: kdeldycke/workflows/.github/workflows/lint.yaml@v1.1.0
+    uses: kdeldycke/workflows/.github/workflows/lint.yaml@v1.4.1
