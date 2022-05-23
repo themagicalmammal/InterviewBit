@@ -13,10 +13,10 @@ What is the time, space complexity of following code :
 Assume that rand() is O(1) time, O(1) space function.
 
 1. O(N * M) time, O(1) space
-2. O(N + M) time, O(N + M) space
-3. O(N + M) time, O(1) space
-4. O(N * M) time, O(N + M) space
-5. O(N * M) time, O(N * M) space
+1. O(N + M) time, O(N + M) space
+1. O(N + M) time, O(1) space
+1. O(N * M) time, O(N + M) space
+1. O(N * M) time, O(N * M) space
 
 <b> Ans - </b> O(N + M) time, O(1) space
 
