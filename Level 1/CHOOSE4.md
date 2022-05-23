@@ -1,9 +1,9 @@
 What does it mean when we say that an algorithm X is asymptotically more efficient than Y?
 
 1. X will always be a better choice for all inputs
-2. X will always be a better choice for large inputs
-3. X will always be a better choice for small inputs
-4. Y will always be a better choice for small inputs
+1. X will always be a better choice for large inputs
+1. X will always be a better choice for small inputs
+1. Y will always be a better choice for small inputs
 
 <b> Ans - </b> X will always be a better choice for large inputs
 
