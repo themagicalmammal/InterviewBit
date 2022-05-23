@@ -1,8 +1,6 @@
-'''
-
 What is the time complexity of the following code :
 
-```
+```python
     int j = 0;
     for(int i = 0; i < n; ++i) {
         while(j < n && arr[i] < arr[j]) {
@@ -11,15 +9,13 @@ What is the time complexity of the following code :
     }
 ```
 
-O(n)
-O(n^2)
-O(nlogn)
-O(n(logn)^2)
-Can't say. Depends on the value of arr.
+1. O(n)
+2. O(n^2)
+3. O(nlogn)
+4. O(n(logn)^2)
+5. Can't say. Depends on the value of arr.
 
-'''
-
-O(n)
+<b> Ans - </b> O(n)
 
 Note that the variable j is not initialized for each value of variable i.
 Hence, the inner j + + will be executed at most n times.
