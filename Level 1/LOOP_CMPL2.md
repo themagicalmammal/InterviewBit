@@ -1,4 +1,3 @@
-
 What is the time complexity of the following code :
 
 ```python
