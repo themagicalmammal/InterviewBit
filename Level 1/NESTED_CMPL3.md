@@ -15,7 +15,6 @@ What is time complexity of following code :
 1. O(N)
 1. O(N * Sqrt(N))
 
-
 <b> Ans - </b> O(N)
 
 In the first iteration, the j loop runs N times.
