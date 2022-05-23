@@ -1,8 +1,6 @@
-'''
-
 In the following C++ function, let n >= m.
 
-```
+```python
 int gcd(int n, int m) {
         if (n%m ==0) return m;
         if (n < m) swap(n, m);
@@ -16,14 +14,12 @@ int gcd(int n, int m) {
 
 What is the time complexity of the above function assuming n > m?
 
-Θ(logn)
-Ω(n)
-Θ(loglogn)
-Θ(sqrt(n))
+1. Θ(logn)
+1. Ω(n)
+1. Θ(loglogn)
+1. Θ(sqrt(n))
 
-'''
-
-Θ(logn)
+<b> Ans - </b> Θ(logn)
 
 Let us say n = fibonacci(N) and m = fibonacci(N - 1)
 
