@@ -1,8 +1,6 @@
-'''
-
 What is time complexity of following code :
 
-```
+```python
     int count = 0;
     for (int i = N; i > 0; i /= 2) {
         for (int j = 0; j < i; j++) {
@@ -11,15 +9,14 @@ What is time complexity of following code :
     }
 ```
 
-O(N * N)
-O(N * log N)
-O(N * log(log(N)))
-O(N)
-O(N * Sqrt(N))
+1. O(N * N)
+1. O(N * log N)
+1. O(N * log(log(N)))
+1. O(N)
+1. O(N * Sqrt(N))
 
-'''
 
-O(N)
+<b> Ans - </b> O(N)
 
 In the first iteration, the j loop runs N times.
 
