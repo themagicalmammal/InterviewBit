@@ -1,8 +1,7 @@
-'''
 
 What is the time complexity of the following code :
 
-```
+```python
 int i, j, k = 0;
 for (i  = n/2; i <= n; i++) {
     for (j = 2; j <= n; j = j * 2) {
@@ -11,15 +10,13 @@ for (i  = n/2; i <= n; i++) {
 }
 ```
 
-Θ(n)
-Θ(nLogn)
-Θ(n^2)
-Θ(n^2 / Logn)
-Θ(n^2Logn)
+1. Θ(n)
+1. Θ(nLogn)
+1. Θ(n^2)
+1. Θ(n^2 / Logn)
+1. Θ(n^2Logn)
 
-'''
-
-Θ(nLogn)
+<b> Ans - </b> Θ(nLogn)
 
 Lets look at the code we are evaluating:
 
