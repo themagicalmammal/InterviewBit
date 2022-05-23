@@ -10,10 +10,10 @@ What is the time complexity of the following code :
 ```
 
 1. O(n)
-2. O(n^2)
-3. O(nlogn)
-4. O(n(logn)^2)
-5. Can't say. Depends on the value of arr.
+1. O(n^2)
+1. O(nlogn)
+1. O(n(logn)^2)
+1. Can't say. Depends on the value of arr.
 
 <b> Ans - </b> O(n)
 
