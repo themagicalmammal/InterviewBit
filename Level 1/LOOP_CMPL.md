@@ -1,8 +1,6 @@
-'''
-
 What is the time, space complexity of following code :
 
-```
+```python
     int a = 0, b = 0;
     for (i = 0; i < N; i++) {
         a = a + rand();
@@ -14,15 +12,13 @@ What is the time, space complexity of following code :
 
 Assume that rand() is O(1) time, O(1) space function.
 
-O(N * M) time, O(1) space
-O(N + M) time, O(N + M) space
-O(N + M) time, O(1) space
-O(N * M) time, O(N + M) space
-O(N * M) time, O(N * M) space
+1. O(N * M) time, O(1) space
+2. O(N + M) time, O(N + M) space
+3. O(N + M) time, O(1) space
+4. O(N * M) time, O(N + M) space
+5. O(N * M) time, O(N * M) space
 
-'''
-
-O(N + M) time, O(1) space
+<b> Ans - </b> O(N + M) time, O(1) space
 
 The first loop is O(N) and the second loop is O(M). Since you don't know which is bigger, you say \*\* this is O(N + M)\*\*. This can also be written as O(max(N, M)).
 
