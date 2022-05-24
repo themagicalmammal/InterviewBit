@@ -1,7 +1,6 @@
-'''
-
 What is the worst case time complexity of the following code:
 
+```C++
 int memo\[101\]\[101\];
 int findMinPath(vector\<vector<int> >& V, int r, int c) {
 int R = V.size();
@@ -17,18 +16,17 @@ Callsite :
 memset(memo, -1, sizeof(memo));
 findMinPath(V, 0, 0);
 Assume R = V.size() and C = V\[0\].size() and V has positive elements
+```
 
-NOTE : This question involves recursion which will be explained later in topic Backtracking. So, if you are not able to approach this question now, you can give it a try later.
+<b> NOTE </b> : This question involves recursion which will be explained later in topic Backtracking. So, if you are not able to approach this question now, you can give it a try later.
 
-O(2^(R + C))
-O(R*C)
-O(R + C)
-O(R*R + C*C)
-O(R*C*log(R*C))
+1. O(2^(R + C))
+1. O(R*C)
+1. O(R + C)
+1. O(R*R + C*C)
+1. O(R*C*log(R*C))
 
-'''
-
-O(R * C)
+<b> Ans - </b> O(R * C)
 
 Note that for a given `(r, c)`
 
