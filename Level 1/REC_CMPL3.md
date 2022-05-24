@@ -21,10 +21,10 @@ Assume R = V.size() and C = V[0].size() and V has positive elements
 <b> NOTE </b> : This question involves recursion which will be explained later in topic Backtracking. So, if you are not able to approach this question now, you can give it a try later.
 
 1. O(2^(R + C))
-1. O(R*C)
+1. O(R\*C)
 1. O(R + C)
 1. O(R*R + C*C)
-1. O(R*C*log(R*C))
+1. O(R*C*log(R\*C))
 
 <b> Ans - </b> O(R * C)
 
@@ -32,14 +32,14 @@ Note that for a given `(r, c)`
 
 the following code will not be executed more than once:
 
-memo[r][c] = V[r][c] + min(findMinPath(V, r + 1, c), findMinPath(V, r, c + 1))
+memo\[r\]\[c\] = V\[r\]\[c\] + min(findMinPath(V, r + 1, c), findMinPath(V, r, c + 1))
 
-Once memo[r][c] is set, the functions will return at
+Once memo\[r\]\[c\] is set, the functions will return at
 
-if (memo[r][c] != -1) return memo[r][c]
+if (memo\[r\]\[c\] != -1) return memo\[r\]\[c\]
 
 So, every function ends up calling other functions at most 1 time.
-In other words, every function ends up executing atmost O(1) times(Note that you can shift the part about checking for memo[r][c] != -1 at the callsite).
+In other words, every function ends up executing atmost O(1) times(Note that you can shift the part about checking for memo\[r\]\[c\] != -1 at the callsite).
 
 `O(R * C)` possible number of combinations are possible for `(r, c)`
 Hence, the time complexity of the function: O(R * C)
