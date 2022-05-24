@@ -1,9 +1,9 @@
 Which of the following is not bounded by O(n^2)?
 
 1. (15^10) * n + 12099
-2. n^1.98
-3. n^3 / (sqrt(n))
-4. (2^20) * n
+1. n^1.98
+1. n^3 / (sqrt(n))
+1. (2^20) * n
 
 <b> Ans - </b>  n ^ 3 / (sqrt(n))
 
@@ -30,8 +30,8 @@ n ^ 1.98 \< n ^ 2 for n > 1.
 So, its O(n ^ 2) \`\`\`
 
 - Option 3: n ^ 3 / (sqrt(n)) or n ^ 2.5
-There is no possible combination of C and n0 possible
+  There is no possible combination of C and n0 possible
 
 - Option 4: 2 ^ 20 * n
-C = 2 ^ 20, n0 = 1
-2 ^ 20 * n \<= 2 ^ 20 * n ^ 2 for n > 1
+  C = 2 ^ 20, n0 = 1
+  2 ^ 20 * n \<= 2 ^ 20 * n ^ 2 for n > 1
