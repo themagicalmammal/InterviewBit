@@ -2,9 +2,9 @@ Which of the following is not bounded by O(n^2)?
 
 ```python
 1. (15^10) * n + 12099
-1. n^1.98
-1. n^3 / (sqrt(n))
-1. (2^20) * n
+2. n^1.98
+3. n^3 / (sqrt(n))
+4. (2^20) * n
 ```
 
 <b> Ans - </b>  n ^ 3 / (sqrt(n))
