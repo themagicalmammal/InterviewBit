@@ -21,10 +21,10 @@ Assume R = V.size() and C = V\[0\].size() and V has positive elements
 <b> NOTE </b> : This question involves recursion which will be explained later in topic Backtracking. So, if you are not able to approach this question now, you can give it a try later.
 
 1. O(2^(R + C))
-1. O(R*C)
+1. O(R\*C)
 1. O(R + C)
 1. O(R*R + C*C)
-1. O(R*C*log(R*C))
+1. O(R*C*log(R\*C))
 
 <b> Ans - </b> O(R * C)
 
