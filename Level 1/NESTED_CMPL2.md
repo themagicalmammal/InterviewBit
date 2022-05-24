@@ -1,8 +1,6 @@
-'''
-
 What is the time complexity of the following code :
 
-```
+```C++
 int a = 0;
 for (i = 0; i < N; i++) {
     for (j = N; j > i; j--) {
@@ -11,14 +9,12 @@ for (i = 0; i < N; i++) {
 }
 ```
 
-O(N)
-O(N*log(N))
-O(N * Sqrt(N))
-O(N*N)
+1. O(N)
+1. O(N*log(N))
+1. O(N * Sqrt(N))
+1. O(N*N)
 
-'''
-
-O(N * N)
+<b> Ans - </b>  O(N * N)
 
 Total number of runs = N + (N - 1) + (N - 2) + ... 1 + 0
 
