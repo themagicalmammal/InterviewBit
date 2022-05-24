@@ -10,13 +10,14 @@ return V[r][c] + min(findMinPath(V, r + 1, c), findMinPath(V, r, c + 1));
 }
 Assume R = V.size() and C = V[0].size().
 ```
+
 <b> NOTE  </b>: This question involves recursion which will be explained later in topic Backtracking. So, if you are not able to approach this question now, you can give it a try later.
 
 1. O(2^(R + C))
-1. O(R*C)
+1. O(R\*C)
 1. O(R + C)
 1. O(R*R + C*C)
-1. O(R*C*log(R*C))
+1. O(R*C*log(R\*C))
 
 <b> Ans - </b> O(2 ^ (R + C))
 
@@ -24,12 +25,14 @@ Note that in every function call, we end up making 2 calls.
 
 So, the function calls ends up looking like a tree:
 
-               F(0, 0)
-            /          \ 
-        F(0, 1)         F(1, 0)
-         /    \         /       \ 
-      F(0, 2)  F(1,1)  F(1, 1)  F(2, 0)
-         ....
+```
+           F(0, 0)
+        /          \ 
+    F(0, 1)         F(1, 0)
+     /    \         /       \ 
+  F(0, 2)  F(1,1)  F(1, 1)  F(2, 0)
+     ....
+```
 
 The function calls end up making a complete binary tree.
 
