@@ -14,6 +14,7 @@ int searchNumOccurrence(vector<int> &V, int k, int start, int end) {
     return searchNumOccurrence(V, k, start, mid - 1) + 1 + searchNumOccurrence(V, k, mid + 1, end);
 }
 ```
+
 <b> NOTE </b>: This question involves recursion which will be explained later in topic Backtracking. So, if you are not able to approach this question now, you can give it a try later.
 
 1. O(sqrt N)
