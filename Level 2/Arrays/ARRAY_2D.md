@@ -1,5 +1,6 @@
-'''
+Predict the output of the following program :
 
+```python
 def performOps(A):
 m = len(A)
 n = len(A\[0\])
@@ -17,6 +18,6 @@ for i in xrange(len(B)):
 for j in xrange(len(B\[i\])):
 print B\[i\]\[j\],
 
-'''
+```
 
-4 3 2 1 8 7 6 5 12 11 10 9
+<b> Ans - </b>  4 3 2 1 8 7 6 5 12 11 10 9
