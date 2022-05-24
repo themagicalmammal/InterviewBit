@@ -10,9 +10,9 @@ for (i = 0; i < N; i++) {
 ```
 
 1. O(N)
-1. O(N*log(N))
+1. O(N\*log(N))
 1. O(N * Sqrt(N))
-1. O(N*N)
+1. O(N\*N)
 
 <b> Ans - </b>  O(N * N)
 
