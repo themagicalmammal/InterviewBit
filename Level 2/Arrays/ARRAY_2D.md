@@ -17,8 +17,8 @@ What would be the output of the following call :
 
 B = performOps(A)
 for i in xrange(len(B)):
-for j in xrange(len(B[i])):
-print B[i][j],
+  for j in xrange(len(B[i])):
+    print B[i][j],
 
 ```
 
