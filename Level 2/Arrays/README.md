@@ -1,9 +1,9 @@
-## [Arrays](Arrays)
+## Arrays
 
-### [Primers](Math)
+### Primers
 
-- [ARRAY_2D](ARRAY%2D.md)
-- [ARRAY_BUG](ARRAY%BUG.md)
-- [ARRAY_IMPL1](ARRAY%IMPL1.md)
+- [ARRAY_2D](ARRAY%202D)
+- [ARRAY_BUG](ARRAY%20BUG.md)
+- [ARRAY_IMPL1](ARRAY%20IMPL1.md)
 
 
