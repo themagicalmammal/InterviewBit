@@ -17,9 +17,9 @@ So, in example case, you will return [2, 1, 4, 3]
 
 ```python
 class Solution:
-def wave(self, A):
-A.sort()
-for i in range(0, len(A) - 1, 2):
-A[i], A[i + 1] = A[i + 1], A[i]
-return A
+  def wave(self, A):
+    A.sort()
+    for i in range(0, len(A) - 1, 2):
+      A[i], A[i + 1] = A[i + 1], A[i]
+    return A
 ```
