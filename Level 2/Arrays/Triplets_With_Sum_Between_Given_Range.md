@@ -22,8 +22,7 @@ O(n) solution is expected.
 
 Note: You can assume the numbers in strings don’t overflow the primitive data type and there are no leading zeroes in numbers. Extra memory usage is allowed.
 
-
-<b> Ans - </b>  
+<b> Ans - </b>
 
 ```python
 class Solution:
@@ -32,24 +31,24 @@ class Solution:
         a = float(A[0])
         b = float(A[1])
         c = float(A[2])
-        for i in range(3 , n):
-            if ((a+b+c) > 1 and (a+b+c) < 2):
+        for i in range(3, n):
+            if (a + b + c) > 1 and (a + b + c) < 2:
                 return 1
-            elif ((a+b+c) > 2):
-                if (a>b and a>c):
+            elif (a + b + c) > 2:
+                if a > b and a > c:
                     a = float(A[i])
-                elif (b>a and b>c):
+                elif b > a and b > c:
                     b = float(A[i])
-                elif (c>a and c>b):
+                elif c > a and c > b:
                     c = float(A[i])
             else:
-                if (a<b and a<c):
+                if a < b and a < c:
                     a = float(A[i])
-                elif (b<a and b<c):
+                elif b < a and b < c:
                     b = float(A[i])
-                elif (c<a and c<b):
+                elif c < a and c < b:
                     c = float(A[i])
-        if ((a+b+c) > 1 and (a+b+c) < 2) :
+        if (a + b + c) > 1 and (a + b + c) < 2:
             return 1
         else:
             return 0
