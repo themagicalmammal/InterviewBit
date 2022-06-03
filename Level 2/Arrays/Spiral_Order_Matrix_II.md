@@ -1,64 +1,68 @@
-'''
-
 Given an integer A, generate a square matrix filled with elements from 1 to A2 in spiral order.
 
 Input Format:
 
 The first and the only argument contains an integer, A.
+
 Output Format:
 
 Return a 2-d matrix of size A x A satisfying the spiral order.
+
 Constraints:
 
-1 \<= A \<= 1000
+1 <= A <= 1000
+
 Examples:
 
-Input 1:
+Input 1:<br />
 A = 3
 
-Output 1:
-\[   \[ 1, 2, 3 \],
-\[ 8, 9, 4 \],
-\[ 7, 6, 5 \]   \]
+Output 1: <br />
+[   [ 1, 2, 3 ], <br />
+[ 8, 9, 4 ], <br />
+[ 7, 6, 5 ]   ]
 
-Input 2:
+Input 2:<br />
 4
 
-Output 2:
-\[   \[1, 2, 3, 4\],
-\[12, 13, 14, 5\],
-\[11, 16, 15, 6\],
-\[10, 9, 8, 7\]   \]
+Output 2: <br />
+[   [1, 2, 3, 4], <br />
+[12, 13, 14, 5], <br />
+[11, 16, 15, 6], <br />
+[10, 9, 8, 7]   ]
 
-'''
+<b> Ans - </b>
 
+```python
 class Solution:
-def generateMatrix(self, A):
-B = \[\[0\] * A for _ in range(A)\]
-L = T = 0
-R = C = A - 1
-d = 0
-j = 1
-while L \<= R and T \<= C:
-if d == 0:
-for i in range(L, R + 1):
-B\[T\]\[i\] = j
-j += 1
-T += 1
-elif d == 1:
-for i in range(T, C + 1):
-B\[i\]\[R\] = j
-j += 1
-R -= 1
-elif d == 2:
-for i in range(R, L - 1, -1):
-B\[C\]\[i\] = j
-j += 1
-C -= 1
-elif d == 3:
-for i in range(C, T - 1, -1):
-B\[i\]\[L\] = j
-j += 1
-L += 1
-d = (d + 1) % 4
-return B
+    def generateMatrix(self, A):
+        result = [[0]*(A) for _ in range(A)]
+
+        max_x = max_y = (A)-1
+        start_x = start_y = 0
+        i = 1
+        while i <= (A)**2:
+            for j in range(start_y, max_y+1):
+                result[start_x][j] = i
+                i += 1
+            start_x += 1
+            
+            for j in range(start_x, max_x+1):
+                result[j][max_y] = i
+                i += 1
+            max_y -= 1
+
+            for j in range(max_y, start_y-1, -1):
+                result[max_x][j] = i
+                i += 1
+            max_x -= 1
+
+            for j in range(max_x, start_x-1, -1):
+                # print(i, j, max_x, start_x-1, result)
+                result[j][start_y] = i
+                # print(result)
+                i += 1
+            start_y += 1
+        return result
+
+```
