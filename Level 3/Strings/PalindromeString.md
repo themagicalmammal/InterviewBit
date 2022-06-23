@@ -24,26 +24,25 @@ Output and Explanation 2:
 
 The input string after ignoring spaces, and all special characters is "raceacar" which is not a palindrome
 
- 
-
 Return 0 / 1 ( 0 for false, 1 for true ) for this problem
 
-<b> Ans - </b>  
+<b> Ans - </b>
 
 ```python
 import string
 import hashlib
 
+
 class Solution:
-    def isPalindrome(self, A):        
+    def isPalindrome(self, A):
         if not A:
             return 0
-        
-        trt = A.maketrans('','',string.punctuation)
-        A = A.translate(trt).replace(" ","").lower()
-    
-        s_b = bytearray(A[:len(A)//2], 'utf-8')
-        e_b = bytearray(A[len(A) - len(A)//2:], 'utf-8')
+
+        trt = A.maketrans("", "", string.punctuation)
+        A = A.translate(trt).replace(" ", "").lower()
+
+        s_b = bytearray(A[: len(A) // 2], "utf-8")
+        e_b = bytearray(A[len(A) - len(A) // 2 :], "utf-8")
 
         e_b.reverse()
 
