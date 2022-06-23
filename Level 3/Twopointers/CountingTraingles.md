@@ -10,27 +10,27 @@ Return answer modulo 109 + 7.
 
 For example,
 
-A = [1, 1, 1, 2, 2]
+A = \[1, 1, 1, 2, 2\]
 
 Return: 4
 
-<b> Ans - </b>  
+<b> Ans - </b>
 
 ```python
 class Solution:
     def nTriang(self, A):
-        arr=A
+        arr = A
         n = len(arr)
         arr.sort()
         count = 0
-        for i in range(0,n-2):
+        for i in range(0, n - 2):
             k = i + 2
-            for j in range(i+1,n-1):
-                while (k < n):
-                    if (arr[i] + arr[j] > arr[k]):
+            for j in range(i + 1, n - 1):
+                while k < n:
+                    if arr[i] + arr[j] > arr[k]:
                         k += 1
                     else:
                         break
-                count += k - j-1
-        return count%(1000000007)
+                count += k - j - 1
+        return count % (1000000007)
 ```
