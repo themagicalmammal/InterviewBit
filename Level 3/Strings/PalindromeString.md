@@ -53,3 +53,17 @@ class Solution:
             return 1
         return 0
 ```
+
+```python
+import string
+
+class Solution:
+    def isPalindrome(self, A):        
+        if not A:
+            return 0
+        
+        trt = A.maketrans('','',string.punctuation)
+        A = A.translate(trt).replace(" ","").lower()
+        
+        return 1 if A == A[::-1] else 0
+```
